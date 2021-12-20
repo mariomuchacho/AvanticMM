@@ -32,8 +32,8 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.loadMocklugaresFromJson(context?.assets?.open("pois.json"))
-        //listViewModel.getLugaresFromServer()
+        //viewModel.loadMocklugaresFromJson(context?.assets?.open("pois.json"))
+        viewModel.getLugaresFromServer()
 
         lugaresAdapter= LugaresAdapter(listLugares, onItemCliked = {onLugarCliked(it)})
 

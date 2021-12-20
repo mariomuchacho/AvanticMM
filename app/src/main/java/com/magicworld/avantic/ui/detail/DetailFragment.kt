@@ -30,7 +30,7 @@ class DetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val lugar = args.lugar
-
+        
         with(detailBinding) {
             nombreTextView.text = lugar.name
             description1TextView.text = lugar.description

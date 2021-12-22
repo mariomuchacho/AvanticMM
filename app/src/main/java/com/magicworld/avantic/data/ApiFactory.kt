@@ -6,7 +6,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiFactory {
-    private const val urlApi="http://my-json-server.typicode.com/"
+    private const val urlApi="https://my-json-server.typicode.com/"
 
     private val okkHttpClient  = OkHttpClient.Builder()
         .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
